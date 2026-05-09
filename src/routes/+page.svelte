@@ -1,2 +1,19 @@
-<h1 class="bg-blue-950">Welcome to SvelteKit</h1>
-<p>Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p>
+<script>
+	import favicon from '$lib/assets/favicon.svg';
+	import "../app.css"
+  	import Header from '../components/Header.svelte';
+    import Main from '../components/Main.svelte';
+
+	let { children } = $props();
+
+	let y = $state();
+	let innerHeight = $state(0);
+	let innerWidth = $state(0);
+
+	function goTop() {
+		document.body.scrollIntoView();
+	}
+</script>
+<Header y={y} {innerHeight}/>
+<Main/>
+
