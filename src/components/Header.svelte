@@ -1,31 +1,54 @@
 <script>
-    let { y } = $props();
+    let { y = 0 } = $props();
 
     let tabs = [
-        {name: 'Projects', link: '#projects'},
-        {name: 'About me', link: '#about'},
-    ]
+        { name: 'Features', link: '#features' },
+        { name: 'About', link: '#about' },
+        { name: 'Contact', link: '#contact' }
+    ];
 </script>
 
-<header class={"sticky z-[10] top-0 duration-200 px-6 flex items-center justify-between border-b border-solid" + 
-    (y>0
-        ?'py-4 bg-slate-950 border-violet-950 text-white'
-        :'py-6 bg-transparent border-transparent')
-}>
-    <h1 class="font-medium">
-        <b class="font-bold poppins text-lime-400">UMS</b>pli
-    </h1>
-    <div class="sm:flex ml-auto pr-4 items-center gap-4 hidden">
-        {#each tabs as tab, index}
-            <a href={tab.link} class="duration-200 hover:text-violet-400">
-                <p>{tab.name}</p>
-            </a>
-        {/each}
-    </div>
-    <a href="#" target="_blank" class="blueShadow relative overflow-hidden px-5 py-2 group rounded-full bg-white text-slate-950">
-        <div class="absolute top-0 right-full w-full h-full bg-violet-400 opacity-20 group-hover:translate-x-full z-0 duration-200">
+<header
+    class={`sticky top-0 z-50 duration-300 border-b
+    ${
+        y > 0
+            ? 'py-4 bg-slate-950 border-violet-950 text-white'
+            : 'py-6 bg-transparent border-transparent'
+    }`}
+>
+    <div class="max-w-7xl mx-auto px-6 flex items-center justify-between">
 
-        </div>
-        <h4 class="relative z-9">Get in touch</h4>
-    </a>
+        <a href="/">
+            <h1 class="text-xl font-medium">
+                <span class="font-bold poppins text-lime-400">UMS</span>pli
+            </h1>
+        </a>
+
+        <!-- Navigation -->
+        <nav class="hidden sm:flex items-center gap-8 ml-auto mr-6">
+            {#each tabs as tab}
+                <a
+                    href={tab.link}
+                    class="duration-200 hover:text-lime-400"
+                >
+                    {tab.name}
+                </a>
+            {/each}
+        </nav>
+
+        <!-- CTA Button -->
+        <a
+            href="signIn"
+            class="blueShadow relative overflow-hidden px-5 py-2 rounded-full bg-white text-slate-950 font-medium group"
+        >
+            <div
+                class="absolute inset-0 bg-lime-400 opacity-20 translate-x-[-100%] group-hover:translate-x-0 duration-300"
+            ></div>
+
+            <span class="relative z-10">
+                Sign In
+            </span>
+        </a>
+
+    </div>
 </header>

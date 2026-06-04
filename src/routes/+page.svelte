@@ -14,6 +14,6 @@
 	bind:innerWidth={innerWidth}
 />
 
-<Header {y} {innerHeight} />
+<Header {y}  />
 <Main />
 <Footer />
