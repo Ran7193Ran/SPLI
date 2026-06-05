@@ -32,11 +32,11 @@
                 class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
             >
                 <a
-                    href="/signUp"
+                    href="/quiz"
                     class="bg-lime-400 hover:bg-lime-500 duration-200
                     text-slate-900 font-semibold px-8 py-4 rounded-full shadow-lg"
                 >
-                    Start Quiz →
+                    Start →
                 </a>
 
                 <a
