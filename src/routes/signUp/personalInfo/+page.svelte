@@ -31,7 +31,7 @@
 
             <!-- IC Number -->
             <div>
-                <label class="block mb-2 font-medium">
+                <label class="block mb-2 font-medium" for="">
                     IC Number
                 </label>
                 <input
@@ -43,7 +43,7 @@
 
             <!-- Full Name -->
             <div>
-                <label class="block mb-2 font-medium">
+                <label class="block mb-2 font-medium" for="">
                     Full Name
                 </label>
                 <input
@@ -57,7 +57,7 @@
             <div class="grid md:grid-cols-2 gap-6">
 
                 <div>
-                    <label class="block mb-2 font-medium">
+                    <label for="" class="block mb-2 font-medium">
                         Gender
                     </label>
 
@@ -75,7 +75,7 @@
                 </div>
 
                 <div>
-                    <label class="block mb-2 font-medium">
+                    <label for="" class="block mb-2 font-medium">
                         Date of Birth
                     </label>
                     <input
@@ -90,7 +90,7 @@
             <div class="grid md:grid-cols-2 gap-6">
 
                 <div>
-                    <label class="block mb-2 font-medium">
+                    <label for="" class="block mb-2 font-medium">
                         Phone Number
                     </label>
                     <input
@@ -101,7 +101,7 @@
                 </div>
 
                 <div>
-                    <label class="block mb-2 font-medium">
+                    <label for="" class="block mb-2 font-medium">
                         Email Address
                     </label>
                     <input
@@ -122,12 +122,8 @@
                     Back
                 </button>
 
-                <button
-                    class="px-8 py-3 rounded-lg bg-lime-400 hover:bg-lime-500 font-semibold duration-200"
-                >
-                    Continue →
-                </button>
-
+                <a href="/signUp/statusDetails" class="px-8 py-3 rounded-lg bg-lime-400 hover:bg-lime-500 font-semibold duration-200">Continue →</a>
+                
             </div>
 
         </div>
