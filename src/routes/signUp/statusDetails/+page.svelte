@@ -221,7 +221,7 @@
 
                 <a href="/signUp/personalInfo" class="px-6 py-3 rounded-lg border hover:bg-gray-100 duration-200">Back</a>
 
-                <a href="" class="px-8 py-3 rounded-lg bg-lime-400 hover:bg-lime-500 font-semibold duration-200">
+                <a href="/signUp/preference" class="px-8 py-3 rounded-lg bg-lime-400 hover:bg-lime-500 font-semibold duration-200">
                     Continue →
                 </a>
 
