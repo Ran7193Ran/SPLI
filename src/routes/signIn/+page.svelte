@@ -62,13 +62,9 @@
         </div>
 
         <!-- Sign In Button -->
-        <button
-            class="w-full bg-lime-400 hover:bg-lime-500
+         <a href="/dashBoard" class="flex justify-center w-full bg-lime-400 hover:bg-lime-500
             duration-200 text-slate-900 font-semibold
-            rounded-full py-3 shadow-lg"
-        >
-            Sign In
-        </button>
+            rounded-full py-3 shadow-lg">Sign In</a>
 
         <!-- Divider -->
         <div class="flex items-center my-6">

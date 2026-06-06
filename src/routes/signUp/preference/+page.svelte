@@ -91,7 +91,7 @@
 
 <Header {y} />
 
-<main class="flex justify-center px-4 -py-10">
+<main class="flex justify-center px-4 py-10">
     <div class=" w-full max-w-4xl p-8">
         <div class="mb-8">
             <h1 class="text-3xl font-bold">
@@ -170,7 +170,7 @@
                     Back
                 </a>
 
-                <a href="" class="px-8 py-3 rounded-lg bg-lime-400 hover:bg-lime-500 font-semibold duration-200">Save</a>
+                <a href="/dashBoard" class="px-8 py-3 rounded-lg bg-lime-400 hover:bg-lime-500 font-semibold duration-200">Save</a>
                 
             </div>
     </div>
