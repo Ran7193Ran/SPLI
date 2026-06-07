@@ -64,9 +64,6 @@
 
 		<!-- Question -->
 		<div class="p-6">
-			<h2 class="font-semibold text-lg mb-6">
-				I would like work that involves.
-			</h2>
 
 			<div class="grid grid-cols-5 gap-4">
                 {#each questions as section}
