@@ -11,13 +11,13 @@
 			title: 'Work Interests',
 			description: 'Discover your key areas of interest and the preferences that will make the best job match for you.',
 			progress: 0,
-			link: '/quiz/work-interest'
+			link: '/quiz/workInterest'
 		},
 		{
 			title: 'Work Values',
 			description: 'Explore the work values that are important for you in your future career.',
 			progress: 0,
-			link: '/quiz/work-values'
+			link: '/quiz/workValues'
 		},
 		{
 			title: 'Employability',
